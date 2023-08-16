@@ -132,7 +132,7 @@ app.use('*',(req,res,next)=>{
 	res.send('<h2>ไม่พบหน้าทีค้นหา <br><a href="/home" style="color:red;">กลับหนาหลัก</a></h2>')
 });
 //connection app
-const PORT=process.env.PORT||3000
+const PORT=process.env.PORT||3000;
 app.listen(3000,(err)=>{
 	if(err==undefined){
 		console.log('Server Started: on port: '+PORT+'.Exit please \'CTRL+C\'');
